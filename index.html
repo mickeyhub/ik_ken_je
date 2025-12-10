@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ik ken je - Kaartspel voor kids</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #FFF8DC;
+            color: #228B22;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1E90FF;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: #FFF8DC;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            color: #87CEEB;
+            font-size: 1rem;
+        }
+
+        main {
+            padding: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            background-color: white;
+            border-radius: 20px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: #1E90FF;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #87CEEB;
+            border-radius: 15px;
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .text-placeholder {
+            background-color: #FFF8DC;
+            border-left: 4px solid #FFA07A;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            color: #228B22;
+            font-size: 0.95rem;
+        }
+
+        .cta-button {
+            display: block;
+            background-color: #CD5C5C;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            box-shadow: 0 4px 8px rgba(205, 92, 92, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: center;
+        }
+
+        .cta-button.secondary {
+            background-color: #1E90FF;
+            box-shadow: 0 4px 8px rgba(30, 144, 255, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(205, 92, 92, 0.4);
+        }
+
+        .cta-button.secondary:hover {
+            box-shadow: 0 6px 12px rgba(30, 144, 255, 0.4);
+        }
+
+        .cta-button:active {
+            transform: translateY(0);
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        footer {
+            background-color: #228B22;
+            color: #FFF8DC;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            main {
+                padding: 2rem;
+            }
+
+            section {
+                padding: 2rem;
+            }
+
+            .image-placeholder {
+                height: 250px;
+            }
+
+            .button-group {
+                flex-direction: row;
+            }
+
+            .cta-button {
+                flex: 1;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .image-placeholder {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ik ken je</h1>
+        <p class="tagline">Een kaartspel voor kids in de buurt</p>
+    </header>
+
+    <main>
+        <!-- How to Play Section -->
+        <section id="hoe-speel-ik">
+            <h2>Hoe Speel Ik?</h2>
+            <div class="image-placeholder">
+                [Afbeelding: Kaarten verkrijgen]
+            </div>
+            <div class="text-placeholder">
+                <p><strong>Introductie:</strong> Er zijn twee manieren om Ik ken je te spelen! Kies of je samen wilt werken met je vrienden, of dat je een vriendelijke wedstrijd wilt spelen.</p>
+            </div>
+            <div class="button-group">
+                <a href="coop.html" class="cta-button">Samenwerken →</a>
+                <a href="competitive.html" class="cta-button secondary">Wedstrijd →</a>
+            </div>
+        </section>
+
+        <!-- Where to Get Cards Section -->
+        <section id="waar-krijg-ik">
+            <h2>Waar Krijg Ik?</h2>
+            <div class="image-placeholder">
+                [Afbeelding: Kaarten verkrijgen]
+            </div>
+            <div class="text-placeholder">
+                <p><strong>Hoe krijg je de kaarten:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Je kunt de kaarten ophalen bij... Of bestel ze online via... De kaarten zijn gratis/beschikbaar voor alle kinderen in de buurt!</p>
+            </div>
+        </section>
+
+        <!-- Become a Card Section -->
+        <section id="word-een-kaart">
+            <h2>Word Een Kaart</h2>
+            <div class="image-placeholder">
+                [Afbeelding: Kind of locatie op een kaart]
+            </div>
+            <div class="text-placeholder">
+                <p><strong>Wil jij op een kaart?</strong> Wil je zelf op een kaart komen, of ken je een leuke plek in de buurt? Neem contact met ons op via [email/telefoon/website]. We zoeken kinderen en bijzondere plekken uit de buurt om op de kaarten te zetten!</p>
+            </div>
+        </section>
+
+        <!-- About the Project Section -->
+        <section id="over-het-project">
+            <h2>Over Het Project</h2>
+            <div class="text-placeholder">
+                <p><strong>Over het project:</strong> Ik ken je is een project om kinderen in de buurt met elkaar te verbinden. Door samen te spelen leren kinderen elkaar beter kennen en ontdekken ze hun buurt. Dit project is ontstaan uit... [details over het project, wie het heeft gemaakt, wat het doel is, etc.]</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Ik ken je - Speel, leer, en maak vrienden!</p>
+    </footer>
+</body>
+</html>
