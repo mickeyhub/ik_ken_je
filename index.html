@@ -17,7 +17,7 @@
             <h2 class="modal-title">Grote Kick-off!</h2>
             <div class="modal-date">Zaterdag 24 Januari</div>
             <div class="modal-time">15:00 uur</div>
-            <div class="modal-location">📍 Het Wijklokaal</div>
+            <div class="modal-location">📍 Het Wijklokaal <br> 🚶‍➡️ Spui 248a</div>
             <p class="modal-text">Kom gezellig spelen en ontvang een <strong>gratis pakje kaarten</strong>!</p>
             <p class="modal-subtext">Iedereen is welkom!</p>
             <button class="modal-button">Ik kom! 🎊</button>
@@ -25,9 +25,9 @@
     </div>
     
     <header>
-        <a href="index.html" style="text-decoration: none; color: inherit;">
+        <a href="index.html">
             <h1>IKKENJE</h1>
-            <p class="subtitle" style="font-size: 1.5rem; color: tomato; margin: 0.3em 0;">Breng je buren samen!</p>
+            <p class="subtitle">Breng je buren samen!</p>
             <p class="tagline">Een kaartspel voor Rivierenbuurt-Spuikwartier</p>
         </a>
     </header>
@@ -54,7 +54,7 @@
             <img src="img/wijklokaal.png" alt="De speelkaart van het Wijklokaal">
             <div class="text">
                 <p><strong>Hoe krijg je de kaarten:</strong> Je kunt de kaarten ophalen bij evenementen in het wijklokaal of in de wijktuin. De kaarten zijn gratis beschikbaar voor alle kinderen in de buurt!</p>
-                <p><a href="https://www.brs-denhaag.nl/wijklokaal-rivierenbuurt-spuikwartier/" target="_blank">Hier kun je meer informatie en de agenda vinden van het wijklokaal</a>, <a href="https://www.brs-denhaag.nl/wijktuin/" target="_blank">of kom buiten de wintermaanden langs in de wijktuin!</a> </p>
+                <p>Hier kun je meer informatie en de agenda vinden <a href="https://www.brs-denhaag.nl/wijklokaal-rivierenbuurt-spuikwartier/" target="_blank">van het wijklokaal</a>, of kom buiten de wintermaanden langs <a href="https://www.brs-denhaag.nl/wijktuin/" target="_blank">in de wijktuin!</a></p>
             </div>
         </section>
 
@@ -82,17 +82,42 @@
             <h2>Over Het Project</h2>
             <img src="img/persoon_joannes.png" alt="De speelkaart van Joannes, de bedenker van het spel">
             <div class="text">
-                <p>
-                    <strong>Over het project:</strong> Ikkenje is een project om bewoners in de Rivierenbuurt-Spuikwartier met elkaar te verbinden. Door samen te spelen, leren mensen elkaar beter kennen en ontdekken ze hun buurt op een nieuwe manier.<br>
-                    Wij willen graag dat onze buurt meer is dan alleen een plek om te slapen of na het werk te zijn. Voor ons is de buurt een plek om in te leven, om deel te nemen aan activiteiten en om sociale contacten op te bouwen en te onderhouden.<br>
-                    De buurt is een plek voor zowel rust als plezier, en vooral voor verbinding.
-                </p>
+                <p><strong>Over het project:</strong> Ikkenje is een project om bewoners in de Rivierenbuurt-Spuikwartier met elkaar te verbinden. Door samen te spelen, leren mensen elkaar beter kennen en ontdekken ze hun buurt op een nieuwe manier.</p>
+                <p>Wij willen graag dat onze buurt meer is dan alleen een plek om te slapen of na het werk te zijn. Voor ons is de buurt een plek om in te leven, om deel te nemen aan activiteiten en om sociale contacten op te bouwen en te onderhouden.</p>
+                <p>De buurt is een plek voor zowel rust als plezier, en vooral voor verbinding.</p>
             </div>
         </section>
     </main>
 
     <footer>
         <p>© 2025 Ik ken je - Speel, leer, en maak vrienden!</p>
+        <img src="img/Fonds1818_logo_RGB_Zwart.png" alt="Fonds 1818">
     </footer>
+
+    <script>
+        // Show modal on page load
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('event-modal').style.display = 'flex';
+            }, 500);
+        });
+
+        // Close modal functions
+        document.querySelector('.modal-close').addEventListener('click', function() {
+            document.getElementById('event-modal').style.display = 'none';
+        });
+
+        document.querySelector('.modal-button').addEventListener('click', function() {
+            document.getElementById('event-modal').style.display = 'none';
+        });
+
+        // Close when clicking outside modal
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('event-modal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
