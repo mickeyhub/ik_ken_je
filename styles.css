@@ -18,12 +18,23 @@ header {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
 h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: #FFF8DC;
     font-size: 2rem;
     margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: tomato;
+    margin: 0.3em 0;
 }
 
 .tagline {
@@ -135,6 +146,7 @@ footer {
     margin-top: 2rem;
 }
 
+/* Modal Styles */
 .modal {
     display: none;
     position: fixed;
@@ -263,6 +275,7 @@ footer {
     transform: translateY(0);
 }
 
+/* Responsive Design */
 @media (min-width: 768px) {
     h1 {
         font-size: 2.5rem;
