@@ -144,6 +144,22 @@ footer {
     text-align: center;
     padding: 1.5rem;
     margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer img {
+    max-height: 100px;
+    width: auto;
+    margin: 0;
+    border: none;
 }
 
 /* Modal Styles */
